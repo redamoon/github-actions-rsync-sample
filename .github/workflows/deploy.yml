@@ -12,6 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       # Unzip and remove zip files
       - name: unzip file
-        run: unzip -qq './data/*.zip' -d ./data && rm ./data/*.zip
-        run: cd ./data/ && ls -la
+        run: unzip -qq './data/*.zip' -d ./data && rm ./data/*.zip && cd ./data/ && ls -la
 
