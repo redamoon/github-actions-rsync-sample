@@ -13,4 +13,5 @@ jobs:
       # Unzip and remove zip files
       - name: unzip file
         run: unzip -qq './data/*.zip' -d ./data && rm ./data/*.zip
+        run: cd ./data/ && ls -la
 
